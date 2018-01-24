@@ -19,86 +19,89 @@
       </div>
     </div>
     <br>
-    <div class="row inline-block">
-      <div class="col-sm-6">
+    <div class="row">
+      <div class="col-xs-6">
         <div class="panel panel-default">
           <div class="panel-heading player-one">
             <h2>Player One</h2>
           </div>
           <div class="panel-body controls">
-            <div class="col-sm-3">
-              <div class="well">Score:
-                <span id="player-one-score">0</span>
+            <div class="col-xs-3">
+              <div class="well">Score:<span id="player-one-score">0</span>
               </div>
             </div>
             <!-- Player One Buttons -->
             <div id="player-one-controls">
-              <div class="col-sm-2">
-                <div class="well">Turn:
-                  <span class="current-turn"></span>
+              <div class="col-xs-2">
+                <div class="well">Turn:<span class="current-turn"></span>
                 </div>
               </div>
-              <div class="col-sm-2">
-                <div class="well">Roll:
-                  <span class="current-roll"></span>
+              <div class="col-xs-2">
+                <div class="well">Roll:<span class="current-roll"></span>
                 </div>
               </div>
-              <div class="col-lg-5">
-                <button type="button" class="btn btn-default left-align roll">Roll!</button>
-                <button type="button" class="btn btn-default left-align hold">Hold!</button>
+              <div class="col-xs-5">
+                <button type="button" class="btn btn-default left-align roll">Roll</button>
+                <button type="button" class="btn btn-default left-align hold">Hold</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-6">
+      <div class="col-xs-6">
         <div class="panel panel-default">
           <div class="panel-heading player-two">
             <h2>Player Two</h2>
           </div>
           <div class="panel-body controls">
-            <div class="col-sm-3">
-              <div class="well">Score:
-                <span id="player-two-score">0</span>
+            <div class="col-xs-3">
+              <div class="well">Score:<span id="player-two-score">0</span>
               </div>
             </div>
             <!-- Player Two Buttons -->
             <div id="player-two-controls">
-              <div class="col-sm-2">
-                <div class="well">Turn:
-                  <span class="current-turn"></span>
+              <div class="col-xs-2">
+                <div class="well">Turn:<span class="current-turn"></span>
                 </div>
               </div>
-              <div class="col-sm-2">
-                <div class="well">Roll:
-                  <span class="current-roll"></span>
+              <div class="col-xs-2">
+                <div class="well">Roll:<span class="current-roll"></span>
                 </div>
               </div>
-              <div class="col-lg-5">
-                <button type="button" class="btn btn-default left-align roll">Roll!</button>
-                <button type="button" class="btn btn-default left-align hold">Hold!</button>
+              <div class="col-xs-4">
+                <button type="button" class="btn btn-default left-align roll">Roll</button>
+                <button type="button" class="btn btn-default left-align hold">Hold</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12">
+    <div class="row row-eq-height">
+      <div id="my-row" class="col-xs-6">
         <div class="panel panel-info">
           <div class="panel-body">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet optio mollitia est obcaecati, vel officiis nesciunt alias
-              tempore libero quas ab nemo aliquam exercitationem consectetur. Reprehenderit voluptates esse minima quod!
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quae dignissimos totam quos voluptate,
-              saepe necessitatibus suscipit delectus aliquid ut aperiam molestiae odit repudiandae perspiciatis magnam sint
-              cupiditate inventore ipsa! Repellat, nemo optio. Autem quam, fuga architecto eum temporibus recusandae ducimus
-              numquam repudiandae a itaque natus odio. Deserunt illum dolor quis, molestias perferendis repudiandae mollitia
-              neque officia laboriosam ea? Ad! Nihil nam harum facilis tempore suscipit temporibus veniam dolorum non eum
-              sunt exercitationem, mollitia fugit et. Laudantium, maxime fugiat veniam sapiente quasi consequatur nulla incidunt
-              alias qui, eius, esse earum!
-            </p>
+            <label for="result-output" id="result-heading">Results:</label>
+            <textarea readonly class="form-control" rows="20" id="result-output" style="resize: none;"></textarea>
           </div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="panel panel-default text-output">
+        <p>Pig is a simple dice game first described in print by John Scarne in 1945. As with many games of folk origin, Pig is played with many rule variations. Commercial variants of Pig include Pass the Pigs, Pig Dice, and Skunk. Pig is commonly used by mathematics teachers to teach probability concepts.
+          <br>
+          <br>
+          <h3 style="color:green; text-align: center">Here are the rules</h3>
+        <br>
+        <ul>
+        <li>a turn, a player rolls the die repeatedly. The goal is to accumulate as many points as possible, adding up the numbers rolled on the die. However, if a player rolls a 1, the player's turn is over and any points they have accumulated during this turn are forfeited. Rolling a 1 doesn't wipe out your entire score, just the total earned during that particular roll.</li> 
+          <br>
+          <br>
+        <li>A player can also choose to hold (stop rolling) if they do not want to take a chance of rolling a 1 and losing all of their points from this turn. If the player chooses to hold, all of the points rolled during that turn are added to his or her score.</li>
+        <br>
+        <br>
+        <li>When a player reaches a total of 100 or more points, the game ends and that player is the winner.</p></li>
+        </ul>
         </div>
       </div>
     </div>
